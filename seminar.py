@@ -1,4 +1,4 @@
-list_a = [1, 1, 2, 0, -1, 3, 4, 4]
+'''list_a = [1, 1, 2, 0, -1, 3, 4, 4]
 #list_b = []
 #list_b.append(list_a[0])
 
@@ -38,3 +38,23 @@ print(list_b)
 
 print(list_a[k:] + list_a[:k])
 
+
+
+
+# Напишите программу для печати всех уникальных значений в словаре.
+dict = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {" V ":"S009"}, {" VIII ":"S007"}]
+
+col = []
+for i in dict:
+print(i.values())
+col = col + list(i.values())
+
+print(col)
+print(list(set(col)))
+
+
+dict = [{"V": "S001"}, {"V": "S001"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S005"}, {" V ":"S009"}, {" VIII ":"S007"}]
+
+a = dict[0]
+b = dict[1]
+print(a==b)'''
