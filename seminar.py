@@ -58,3 +58,24 @@ dict = [{"V": "S001"}, {"V": "S001"}, {"VI": "S001"}, {"VI": "S005"}, {"VII": "S
 a = dict[0]
 b = dict[1]
 print(a==b)'''
+
+def fib(n):
+if n in [1, 2]:
+return 1
+return fib(n - 2) + fib(n - 1)
+
+numbers = list(map(int, input().split()))
+max_l = max(numbers)
+min_l = min(numbers)
+result = [i if i != max_l else min_l for i in numbers]
+print(result)
+
+
+def simple(n):
+if n < 2:
+return False
+for i in range(2, int(n ** 0.5) + 1):
+if n % i == 0:
+return False
+return True
+
